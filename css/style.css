@@ -1,0 +1,115 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+   
+    background-color:rgb(230, 230, 230);
+}
+body {
+    min-height: 100vh;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+form, .submit-message{
+    background: rgb(245, 245, 245);
+    width: 100%;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.submit-message{
+  
+    font-size: 1.3rem;
+    display: none;
+}
+.form-groupe {
+  
+    margin: 1rem 0;
+}
+.input-container{
+    position: relative;
+}
+
+input {
+    display: block;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    padding: 1rem 2rem 1rem .5rem;;
+    border-radius: .5rem;
+    border: 1px solid rgba(0,0,0,0.3);
+    font-family: inherit;
+    font-size: inherit;
+  
+}
+
+.validation-icon {
+    width: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    right: 0.3rem;
+    bottom: .8rem;
+    display: none;    
+}
+.alert, .main-alert {
+    margin: .5rem 0;
+    color: crimson;
+    display: none;
+}
+button {
+    display: block;
+    margin: 1rem 0 1rem auto;
+    outline: none;
+    border: none;
+    background-color:white;
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 10px 12px;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    font-family: inherit;
+    font-size: inherit;
+    
+}
+button:hover {
+    background:  rgb(245, 245, 245);
+}
+
+.line {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}
+.l1, .l2, .l3 {
+    width: 30%;
+    height: 5px;
+    margin: 15px 5px 20px;
+    position: relative;
+    display: none;
+}
+.l1 {
+    background: rgb(182,182,13);
+}
+.l2 {
+    background: rgb(151,85,85);
+}
+.l3 {
+    background: green;
+}
+.line span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="submit-message">
+        Plaisir de voir notre cercle s'aggrandir !😍
+    </div>
+    <form>
+        <div class="main-alert">Oups pas si vite, il faut valider tous les champs d'abord. 😉</div>
+        <div class="form-groupe">
+            <div class="input-container">
+                <input type="text" id="user" placeholder="Nom d'utilisateur" maxlength="24">
+                <img src="images/check.svg" alt="icone de validation" class="validation-icon">
+            </div>
+            <div class="alert">Il faut 3 à 24 caractères</div>
+        </div>
+        <div class="form-groupe">
+            <div class="input-container">
+                <input type="email" id="email" placeholder="Email">
+                <img src="images/check.svg" alt="icone de validation" class="validation-icon">
+            </div>
+            
+            <div class="alert">Veiller rentrer un email valide</div>
+        </div>
+        <div class="form-groupe">
+            <div class="input-container">
+                <input type="password" id="password" placeholder="Mot de passe">
+                <img src="images/check.svg" alt="icone de validation" class="validation-icon">
+            </div>
+       
+            
+            <div class="alert">Il faut un symbole, une lettre minuscule, une lettre majuscule, et un chiffre</div>
+            <div class="line">
+                <div class="l1"><span>faible</span></div>
+                <div class="l2"><span>moyen</span></div>
+                <div class="l3"><span>fort</span></div>
+            </div>
+        </div>
+        <div class="form-groupe">
+            <div class="input-container">
+                <input type="password" id="second-password" placeholder="Confirmation de mot de passe">
+                <img src="images/check.svg" alt="icone de validation" class="validation-icon">
+            </div>
+            <div class="alert">Mots de passe differents</div>
+           
+        </div>
+
+        <button type="submit">Valider</button>
+    </form>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
