@@ -71,34 +71,25 @@ passwordInput.addEventListener('input', (e) => {
 
     if(e.target.value.search(specialChar) !== -1){
         passwordValidation.symbol = 1;
+    }else{
+        passwordValidation.symbol = 0;
     }
     if(e.target.value.search(lowercase) !== -1){
         passwordValidation.lowercase = 1;
+    }else{
+        passwordValidation.lowercase = 0;
     }
     if(e.target.value.search(uppercase) !== -1){
         passwordValidation.uppercase = 1;
+    }else{
+        passwordValidation.uppercase = 0;
     }
     
     if(e.target.value.search(number) !== -1){
         passwordValidation.number = 1;
+    }else{
+        passwordValidation.number = 0;
     }
-
-    
-
-    if(e.inputType == 'deleteContentBackward'){
-        if(e.target.value.search(specialChar) === -1){
-            passwordValidation.symbol = 0;
-        }
-        if(e.target.value.search(lowercase) === -1){
-            passwordValidation.lowercase = 0;
-        }
-        if(e.target.value.search(uppercase) === -1){
-            passwordValidation.uppercase = 0;
-        }
-        if(e.target.value.search(number) === -1){
-            passwordValidation.number = 0;
-        }
-    } 
 
     let testValue = true;
     for(const property in passwordValidation){
@@ -106,6 +97,7 @@ passwordInput.addEventListener('input', (e) => {
             testValue =false;
         }
     }
+    
     validationIcons[2].style.display = "block";
     if(!testValue){
         alerts[2].style.display = "block";
