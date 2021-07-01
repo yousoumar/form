@@ -17,15 +17,16 @@ const validation = {
     password : 0
 }
 userInput.addEventListener('input', (e) => {
-
-    if(e.target.value.length >= 3) {
-        validationIcons[0].style.display = "block";
+    const regexUser = /[a-z]/
+    const regexUser2 = /\s/g;
+    validationIcons[0].style.display = "block";
+    if(e.target.value.search(regexUser) === 0 && e.target.value.search(regexUser2) === -1 && e.target.value.trim().length >= 3) {
         validationIcons[0].src = "images/check.svg";
         alerts[0].style.display = "none";
         validation.userName = 1;
     }   
     else {
-        validationIcons[0].style.display = "block";
+        
         validationIcons[0].src = "images/error.svg";
         alerts[0].style.display = "block";
         validation.userName = 0;
