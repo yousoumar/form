@@ -13,7 +13,6 @@ body {
     margin: 0 auto;
     padding: 0 1rem;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
@@ -23,7 +22,7 @@ form, .submit-message{
     background: rgb(245, 245, 245);
     width: 100%;
     padding: 1rem 2rem;
-    margin: 1rem;
+    margin: 30% 1rem 1rem 1rem;
     border-radius: 1rem;
 }
 .submit-message{
