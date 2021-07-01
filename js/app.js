@@ -110,6 +110,9 @@ passwordInput.addEventListener('input', (e) => {
     if(!testValue){
         alerts[2].style.display = "block";
         validationIcons[2].src = "images/error.svg";
+        lines[0].style.display = 'none';
+        lines[1].style.display = 'none';
+        lines[2].style.display = 'none';
         secondPasswordInput.value ="";
         validation.password =0;
         validationIcons[3].style.display = "none";
