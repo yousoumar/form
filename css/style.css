@@ -9,7 +9,7 @@ html{
 }
 body {
     min-height: 100vh;
-    max-width: 30rem;
+    max-width: 40rem;
     margin: 0 auto;
     padding: 0 1rem;
     display: flex;
@@ -17,8 +17,16 @@ body {
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
+
 }
-form, .submit-message{
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 2rem;
+
+}
+form{
     background: rgb(245, 245, 245);
     width: 100%;
     padding: 1rem 2rem;
@@ -26,9 +34,11 @@ form, .submit-message{
     border-radius: 1rem;
 }
 .submit-message{
-  
+    margin: 20% 1rem 1rem 1rem;
     font-size: 1.3rem;
     display: none;
+    width: 100%;
+    text-align: center;
 }
 .form-groupe {
   
@@ -43,7 +53,7 @@ input {
     width: 100%;
     outline: 0;
     border: 0;
-    padding: 1rem 2rem 1rem .5rem;;
+    padding: 1rem 2rem 1rem 1rem;;
     border-radius: .5rem;
     border: 1px solid rgba(0,0,0,0.3);
     font-family: inherit;
@@ -56,7 +66,7 @@ input {
     width: 1.5rem;
     position: absolute;
     right: 0.3rem;
-    bottom: .8rem;
+    bottom: .9rem;
     display: none;    
 }
 .alert, .main-alert {
@@ -66,12 +76,13 @@ input {
 }
 button {
     display: block;
-    margin: 1rem 0 1rem auto;
+    margin: 1rem 0;
+    width: 100%;
     outline: none;
     border: none;
     background-color:white;
     border: 1px solid rgba(0,0,0,0.3);
-    padding: 10px 12px;
+    padding: 1rem;
     border-radius: .5rem;
     cursor: pointer;
     transition: background-color .3s ease;

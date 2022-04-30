@@ -8,33 +8,34 @@
 </head>
 <body>
     <div class="submit-message">
-        Plaisir de voir notre cercle s'aggrandir !😍
+        <p>Plaisir de voir notre cercle s'aggrandir !😍</p>
+        <img src="images/submit.svg" alt="">
     </div>
-    <form>
-        <div class="main-alert">Oups pas si vite, il faut valider tous les champs d'abord. 😉</div>
+    <form novalidate>
+        <div class="main-alert">Oups pas si vite, il faut valider tous les champs d'abord.😉</div>
         <div class="form-groupe">
             <div class="input-container">
                 <input type="text" id="user" placeholder="Nom d'utilisateur" maxlength="24">
-                <img src="images/check.svg" alt="icone de validation" class="validation-icon">
+                <img src="images/check.svg" alt="icone de validation" class="validation-icon user">
             </div>
-            <div class="alert">Il faut 3 à 24 caractères minuscules sans espace</div>
+            <div class="alert user">Il faut 3 à 24 caractères, sans majuscules, sans espace, et sans caractère spécial</div>
         </div>
         <div class="form-groupe">
             <div class="input-container">
                 <input type="email" id="email" placeholder="Email">
-                <img src="images/check.svg" alt="icone de validation" class="validation-icon">
+                <img src="images/check.svg" alt="icone de validation" class="validation-icon email">
             </div>
             
-            <div class="alert">Veiller rentrer un email valide</div>
+            <div  class="alert email">Veiller rentrer un email valide</div>
         </div>
         <div class="form-groupe">
             <div class="input-container">
                 <input type="password" id="password" placeholder="Mot de passe">
-                <img src="images/check.svg" alt="icone de validation" class="validation-icon">
+                <img src="images/check.svg" alt="icone de validation" class="validation-icon password">
             </div>
        
             
-            <div class="alert">Il faut un symbole, une lettre minuscule, une lettre majuscule, et un chiffre</div>
+            <div class="alert password">Il faut un symbole, une lettre minuscule, une lettre majuscule, un chiffre et sans espace</div>
             <div class="line">
                 <div class="l1"><span>faible</span></div>
                 <div class="l2"><span>moyen</span></div>
@@ -44,9 +45,9 @@
         <div class="form-groupe">
             <div class="input-container">
                 <input type="password" id="second-password" placeholder="Confirmation de mot de passe">
-                <img src="images/check.svg" alt="icone de validation" class="validation-icon">
+                <img src="images/check.svg" alt="icone de validation" class="validation-icon second-password">
             </div>
-            <div class="alert">Mots de passe differents</div>
+            <div class="alert second-password">Mots de passe differents</div>
            
         </div>
 
